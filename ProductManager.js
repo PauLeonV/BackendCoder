@@ -72,3 +72,13 @@ class ProductManager {
 
     }
 }
+const manager = new ProductManager();
+
+manager.addProduct({
+    title: 'Juego de Mesa - Calabozo',
+    description: 'Es un emocionante juego de mesa diseñado para jugadores que buscan una experiencia llena de aventuras.',
+    price: 150000,
+    thumbnail: 'imagenCalabozo.jpg',
+    code: 'JM001',
+    stock: 25
+});
