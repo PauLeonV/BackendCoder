@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-class ProductManager {
+export class ProductManager {
     constructor() {
         this.productsPath = 'productos.json';
         this.products = [];
