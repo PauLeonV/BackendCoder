@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 app.get('/products', (req, res) => {
-    const ProductManager = require('./ProductManager.js');
+    import ProductManager from './ProductManager.js';
     const products = new ProductManager();
     const limit = parseInt(req.query.limit); 
     const productList = products.getProduct();
@@ -22,7 +22,7 @@ app.get('/products', (req, res) => {
 });
 
 app.get('/products/:pid', (req, res) => {
-    const ProductManager = require('./productManager.js');
+    import ProductManager from './ProductManager.js';
     const manager = new ProductManager();
     const pid = parseInt(req.params.pid);
     const products = manager.getProduct();
