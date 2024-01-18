@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 app.get('/products', (req, res) => {
-    const ProductManager = require('./productManager.js');
+    const ProductManager = require('./ProductManager.js');
     const products = new ProductManager();
     const limit = parseInt(req.query.limit); 
     const productList = products.getProduct();
